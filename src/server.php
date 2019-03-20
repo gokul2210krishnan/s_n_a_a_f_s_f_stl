@@ -13,17 +13,14 @@ if(isset($_POST["aadh"]))
 {
   if($_POST["aadhar"]!=NULL){
         $count=0;
-        //echo $_POST["aadhar"];
         $_SESSION["aadhar"]=$_POST["aadhar"];
         $q="select aadharno from registration";
         $result=mysqli_query($conn,$q);
-        //echo "<br>".$_SESSION["aadhar"];
         while($row=mysqli_fetch_assoc($result)){
           if($_POST["aadhar"]==$row["aadharno"]){
             $count++;
           }
         };
-        //echo $_SESSION["aadhar"];        
   if($count==1){
           sleep(2);
           header("Location: macronutrient.php");
@@ -74,8 +71,8 @@ if(isset($_POST['st']))
     $_SESSION["crop"]=$_POST["crop"];
     $q2="INSERT INTO `soiltype`(`aadharno`, `ph`, `ec`, `cc`) VALUES ('".$_SESSION["aadhar"]."','".$_POST["ph"]."','".$_POST["ec"]."','".$_POST["cc"]."')";
     mysqli_query($conn,$q2);
-  header("Location: macronutrient.php");
-  exit;
+    header("Location: macronutrient.php");
+    exit;
   }
 }
 
@@ -84,9 +81,6 @@ if(isset($_POST['macro']))
 {
 $sql = "SELECT * FROM whole_crops where crop_id='".$_SESSION["crop"]."'";
 $results = mysqli_query($conn,$sql);
-$i=0;
-$j=0;
-$m=0;
 $ka=array();
 $pa=array();
 $na=array();
@@ -128,13 +122,22 @@ if($_POST["n"]!=NULL && $_POST["p"]!=NULL && $_POST["k"]!=NULL)
     $potash = $_POST["k"];
     $phosp = $_POST["p"];
 //    echo $_POST["n"]." ".$_POST["k"]." ".$_POST["p"]."<br>";
+
+    #converting titre value into nutrients/ac
     $n_per_ac = $nitrogen * 14 *2.5;
     $k_per_ac = $potash * 5;
     $p_per_ac = $phosp * 1.66;
   //  echo $n_per_ac." ".$k_per_ac." ".$p_per_ac."<br>";
+
+    #initializing 
+    $i=0;
+    $j=0;
+    $m=0;
     $u=0;
     $sp=0;
     $mop=0;
+
+    #for n_per_ac with values
     while($i<count($c1))
     {
         if($n_per_ac == $c1[$i])
@@ -162,6 +165,8 @@ if($_POST["n"]!=NULL && $_POST["p"]!=NULL && $_POST["k"]!=NULL)
           }
         $m++;
     };
+
+    #for n_per_ac without values i,e 0(zero)
     if($u==0){
     $i=0;
     while($i<count($c1))
@@ -179,11 +184,9 @@ if($_POST["n"]!=NULL && $_POST["p"]!=NULL && $_POST["k"]!=NULL)
       $j=0;
     while($j<count($c4))
     {
-    //  echo $c4[$j]." ".$p_per_ac."<br>";
       if($p_per_ac < $c4[$j])
         {
           $sp=$c4[$j];
-      //    echo $c4[$j]." ".$c6[$j]."<br>";
             $super_phosphate=$c6[$j];
             $j=count($c4)-1;
           }
@@ -194,7 +197,6 @@ if($_POST["n"]!=NULL && $_POST["p"]!=NULL && $_POST["k"]!=NULL)
       $l=0;    
     while($l<count($c7))
     {
-      //echo "ENTERED123";
         if($k_per_ac > $c7[$l])
           {
               $mop=$c7[$l];
@@ -206,9 +208,16 @@ if($_POST["n"]!=NULL && $_POST["p"]!=NULL && $_POST["k"]!=NULL)
   }
 
 }
-echo $u." ".$urea." ".$sp." ".$super_phosphate." ".$mop." ".$muriate_of_potash."<br>";
-//include "micronutrient.php";
-echo "<a href='micronutrient.php'>Enter here</a>";
+$_SESSION["n"]=$nitrogen;
+$_SESSION["p"]=$posph;
+$_SESSION["k"]=$potash;
+//echo $u." ".$urea." ".$sp." ".$super_phosphate." ".$mop." ".$muriate_of_potash."<br>";
+$q3="INSERT INTO `intermediate`(`aadharno`, `ntr`, `nkgac`, `pmr`, `pkgac`, `kmr`, `kkgac`) VALUES ('".$nitrogen."','".$n_per_ac."','".$posph."','".$p_per_ac."','".$potash."','".$k_per_ac."')";
+$res=mysqli_query($conn,$q3);
+if(!$res){
+header("Location: micronutrient.php");
+exit;
+}
 }
 
 #code for micronutrient calculations..
