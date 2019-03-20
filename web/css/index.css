@@ -1,0 +1,9 @@
+.menu-border-right{border-right:1px solid #ccc!important}
+.menu-bar-block{display:block;}
+.menu-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto;}
+header {
+    background-color:#667;
+    padding: 30px;
+    font-size: 35px;
+    color: white;
+}
