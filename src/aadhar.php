@@ -9,7 +9,7 @@
             <label>Aadhar No</label>
             </div>
             <div class="col-sm-5">
-            <input name="aadhar" id="aadhar" type="text" maxlength="100" oninput="aadharverify()" required>
+         <input name="aadhar" id="aadhar" type="text" maxlength="100"  required>
             </div>
             </div>
             <div class="container">

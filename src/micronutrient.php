@@ -30,7 +30,7 @@
             <label>Copper (Cu) [ppm]:</label>
             </div>
             <div class="col-sm-5">
-            <input type="text" id="cu" maxlength="20" placeholder="<1.2 to >1.2" required>
+            <input type="text" id="cu" name="cu" maxlength="20" placeholder="<1.2 to >1.2" required>
             </div>
             </div>
             <div class="container">
@@ -38,7 +38,7 @@
             <label>Zinc (Zn) [ppm]:</label>
             </div>
             <div class="col-sm-5">
-            <input type="text" id="Zzn" name="zn" maxlength="20" placeholder="<1.2 to >1.2" required>
+            <input type="text" id="zn" name="zn" maxlength="20" placeholder="<1.2 to >1.2" required>
             </div>
             </div>
             <div class="container">

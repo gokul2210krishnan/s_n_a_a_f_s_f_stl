@@ -14,7 +14,7 @@
     </script>
  -->
             <div class="container">
-            <div class="col-sm-4">
+            <div class="col-sm-3">
             <label>Holding feel of soil : </label>
             </div>
             <div class="col-sm-5">
@@ -25,7 +25,7 @@
             </div>
             </div>
             <div class="container">
-            <div class="col-sm-4">
+            <div class="col-sm-3">
             <label>pH of soil : </label>
             </div>
             <div class="col-sm-5">
@@ -33,14 +33,13 @@
             </div>
             </div>
             <div class="container">
-            <div class="col-sm-2">
+            <div class="col-sm-3">
             <label>EC (dSm<sup>-1</sup>):</label>
             </div>
             <div class="col-sm-5">
             <input type="text" id="ec" name="ec" maxlength="20" placeholder="" required>
             </div>
             </div>
-            <div class="container">
             <div class="container">
             <h3 style="color:white;">Crops</h3>
             </div>

@@ -1,7 +1,12 @@
 <body>
 <?php 
     include "header.php";
-
+/*    include "db-connect.php";
+    session_start();
+    $q="SELECT crop_name FROM crop_types WHERE crop_id = SELECT crop_id FROM soiltype WHERE aadharno='".$_SESSION["aadhar"]."'";
+    $r=mysqli_query($conn,$q);
+    $row=mysqli_fetch_assoc($r);
+    $crop_name=$row["crop_name"];*/
 ?>            <div class="container">
 <form method="POST" action="server.php">
 
