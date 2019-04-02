@@ -12,8 +12,10 @@
          <input name="aadhar" id="aadhar" type="text" maxlength="100"  required>
             </div>
             </div>
+            </div></div>
             <div class="container">
             <input type="submit" value="submit" name="aadh">
+            
     </form>
     </div>
 

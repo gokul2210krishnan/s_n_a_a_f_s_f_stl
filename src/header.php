@@ -6,6 +6,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="../web/css/index.css" type="text/css">
+<link rel="stylesheet" type="text/css" media="screen" href="main.css">
 </head>
 <body background="../web/img/img2.jpg">
 <header>

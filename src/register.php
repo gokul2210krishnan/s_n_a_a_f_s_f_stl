@@ -18,10 +18,12 @@ session_start();
             </div>
             <div class="container">
             <div class="col-sm-2">
+
                 <label>Farmer Id:</label>
                 </div>
                 <div class="col-sm-5">
                 <input name="fid" type="text" maxlength="100" required>
+            
             </div>
             </div>
             <div class="container">

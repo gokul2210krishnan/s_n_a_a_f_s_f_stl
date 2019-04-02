@@ -15,14 +15,14 @@
     </style>
 </head>
 <body>
-    <div class="container">
+<!--    <div class="container">
     <div class="menu-sidebar menu-bar-block menu-border-right" style="display:none" id="mySidebar">
   <button onclick="menu_close()" class="w3-bar-item w3-large">Close &times;</button>
   <a href="#" class="w3-bar-item w3-button">Link 1</a>
   <a href="#" class="w3-bar-item w3-button">Link 2</a>
   <a href="#" class="w3-bar-item w3-button">Link 3</a>
 </div>
-    </div>
+    </div>-->
 <header>
 <div class="container">
     <div class="col-sm-1" style="display:block;">    
@@ -35,6 +35,11 @@
     <div class="container">
     <h1>Welcome to soil testing lab</h1>
     <p><a href="aadhar.php">Press here to get into calculation</a></p>
+    </div>
+    <div class="container">
+    <div class="col-sm-4">
+    
+    </div>
     </div>
     <script>
 function menu_open() {

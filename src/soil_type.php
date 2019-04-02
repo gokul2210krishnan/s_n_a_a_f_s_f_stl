@@ -48,91 +48,89 @@
                     <label style="text-align:left;">Select crops preffered:
                     </label>
                 </div>
-                <div class="container">
                 <div class="col-sm-1">
                 <div class="checkbox">
-                    <label style="color:white;"><input type="checkbox" name="crop" value="1"> Rice</label>
-                    </label></div>
-                </div>
-                <div class="col-sm-1">
-                <div class="checkbox">
-                <label style="color:white;"><input type="checkbox" name="crop" value="2"> Maize
-                </label></div>
-                </div>
-                <div class="col-sm-2">
-                <div class="checkbox">
-                <label style="color:white;"><input type="checkbox" name="crop" value="3"> Cholam
-                </label></div>
-                </div>
-                <div class="col-sm-2">
-                <div class="checkbox">
-                <label style="color:white;"><input type="checkbox" name="crop" value="4"> Ragi
-                </label></div>
-                </div>                
-                <div class="col-sm-2">
-                <div class="checkbox">
-                <label style="color:white;"><input type="checkbox" name="crop" value="5"> Cumbu
-                </label></div>
+                    <input type="checkbox" name="crop[]" value="1"> <label style="color:white;">Rice</label></div>
                 </div>
                 <div class="col-sm-1">
                 <div class="checkbox">
-                <label style="color:white;"><input type="checkbox" name="crop" value="6"> Groundnut
+                <label style="color:white;"><input type="checkbox" name="crop[]" value="2"> Maize
                 </label></div>
                 </div>
                 <div class="col-sm-2">
                 <div class="checkbox">
-                <label style="color:white;"><input type="checkbox" name="crop" value="7"> Coconut(Tall)
+                <label style="color:white;"><input type="checkbox" name="crop[]" value="3"> Cholam
                 </label></div>
                 </div>
                 <div class="col-sm-2">
                 <div class="checkbox">
-                <label style="color:white;"><input type="checkbox" name="crop" value="8"> Coconut(Hybrid)
+                <label style="color:white;"><input type="checkbox" name="crop[]" value="4"> Ragi
                 </label></div>
                 </div>                
                 <div class="col-sm-2">
                 <div class="checkbox">
-                <label style="color:white;"><input type="checkbox" name="crop" value="10"> Cotton
+                <label style="color:white;"><input type="checkbox" name="crop[]" value="5"> Cumbu
+                </label></div>
+                </div>
+                <div class="col-sm-1">
+                <div class="checkbox">
+                <label style="color:white;"><input type="checkbox" name="crop[]" value="6"> Groundnut
+                </label></div>
+                </div>
+                <div class="col-sm-2">
+                <div class="checkbox">
+                <label style="color:white;"><input type="checkbox" name="crop[]" value="7"> Coconut(Tall)
+                </label></div>
+                </div>
+                <div class="col-sm-2">
+                <div class="checkbox">
+                <label style="color:white;"><input type="checkbox" name="crop[]" value="8"> Coconut(Hybrid)
                 </label></div>
                 </div>                
                 <div class="col-sm-2">
                 <div class="checkbox">
-                <label style="color:white;"><input type="checkbox" name="crop" value="11"> Cotton(Hybrid)
+                <label style="color:white;"><input type="checkbox" name="crop[]" value="10"> Cotton
                 </label></div>
                 </div>                
                 <div class="col-sm-2">
                 <div class="checkbox">
-                <label style="color:white;"><input type="checkbox" name="crop" value="12"> Sugarcane(mill)
+                <label style="color:white;"><input type="checkbox" name="crop[]" value="11"> Cotton(Hybrid)
                 </label></div>
                 </div>                
                 <div class="col-sm-2">
                 <div class="checkbox">
-                <label style="color:white;"><input type="checkbox" name="crop" value="13"> Sugarcane(Jaggery)
+                <label style="color:white;"><input type="checkbox" name="crop[]" value="12"> Sugarcane(mill)
                 </label></div>
                 </div>                
                 <div class="col-sm-2">
                 <div class="checkbox">
-                <label style="color:white;"><input type="checkbox" name="crop" value="14"> Banana(RNR)
+                <label style="color:white;"><input type="checkbox" name="crop[]" value="13"> Sugarcane(Jaggery)
+                </label></div>
+                </div>                
+                <div class="col-sm-2">
+                <div class="checkbox">
+                <label style="color:white;"><input type="checkbox" name="crop[]" value="14"> Banana(RNR)
                 </label></div>
                 </div>                
                 <div class="col-sm-2">
                     <div class="checkbox">
-                    <label style="color:white;"><input type="checkbox" name="crop" value="15"> Banana(PNR)
+                    <label style="color:white;"><input type="checkbox" name="crop[]" value="15"> Banana(PNR)
                     </label></div>
                 </div>                
                 <div class="col-sm-2">
                 <div class="checkbox">
-                <label style="color:white;"><input type="checkbox" name="crop" value="16"> Banana(Red)
+                <label style="color:white;"><input type="checkbox" name="crop[]" value="16"> Banana(Red)
                 </label></div>
                 </div>
                 <div class="col-sm-2">
                 <div class="checkbox">
-                <label style="color:white;"><input type="checkbox" name="crop" value="17"> Chillis
+                <label style="color:white;"><input type="checkbox" name="crop[]" value="17"> Chillis
                 </label></div>
                 </div>
                 <div class="col-sm-2">
                 <div class="checkbox">
                 <label style="color:white;">
-                    <input type="checkbox" name="crop" value="18"> Topiaco</label>
+                    <input type="checkbox" name="crop[]" value="18"> Topiaco</label>
                     </div>
                 </div>
                 </div>
